@@ -1,6 +1,14 @@
 # UsersApp
 
-This project for users management ie adding,modifying,deleting and updating.
+An angular frontend for managing users
+
+## Project Setup
+```bash
+$ git clone https://github.com/shebang-pixel/users_app
+
+$ cd users_app
+
+$ npm install
 
 ## Development server
 
@@ -12,4 +20,4 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/users`.
 
-find the backend here: 
+find the backend here: `https://github.com/shebang-pixel/users_api`
