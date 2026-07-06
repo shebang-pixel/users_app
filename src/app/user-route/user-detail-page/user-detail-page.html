@@ -1,0 +1,27 @@
+@if(user(); as userDetail) {
+
+    <div class="info-container">
+        <div class="user-info">
+        <div class="profile-pic-cont">
+            <img src="https://placehold.co/120x120" alt="Profile Picture" class="profile-pic">
+        </div>
+        <h1 class="username">{{userDetail.firstName}} {{userDetail.lastName}}</h1>
+        <p class="email"><strong>Email: </strong> {{userDetail.email}}</p>
+        <p class="member-since"><strong>Member Since:</strong> {{userDetail.createdOn}}</p>
+        <p class="last-updated"><strong>Last Modified:</strong> {{userDetail.updatedOn}}</p>
+
+        <div class="edit-btns">
+            <!-- Delete operation triggered by button click -->
+            <button class="del-page" (click)="deleteUser(userDetail.id)">Delete Account</button>
+
+            <!-- Update operation initiated by navigating to the form with user ID -->
+            <button class="edit-page">
+                <a [routerLink]="['/users/add', userDetail.id]">Edit user</a>
+            </button>
+        </div>
+    </div>
+    <button routerLink="/users" class="nav-back">Back</button>
+    </div>
+} @else {
+    <p>Loading User data...</p>
+}

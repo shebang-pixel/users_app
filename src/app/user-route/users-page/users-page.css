@@ -1,0 +1,19 @@
+.heading {
+    display: flex;
+    flex-direction: row;
+    height: 88px;
+    width: auto;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-user {
+    background-color: rgb(47, 179, 47);
+    width: 150px;
+    font-size: larger;
+    font-weight: 900;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+}

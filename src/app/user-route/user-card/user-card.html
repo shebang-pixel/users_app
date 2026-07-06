@@ -1,0 +1,22 @@
+<div class="user-card">
+    <div class="profile-pic">
+        <img src="https://placehold.co/120x120" alt="Profile Picture">
+    </div>
+
+    <div class="user-details">
+        <h2>
+            {{ user().firstName }}
+            <span>{{ user().lastName }}</span>
+        </h2>
+
+        <p class="email">
+            {{ user().email }}
+        </p>
+
+        <div class="meta">
+            <p><strong>User ID:</strong> {{ user().id }}</p>
+            <p><strong>Member Since:</strong> {{ user().createdOn }}</p>
+            <p><strong>Last Updated:</strong> {{ user().updatedOn }}</p>
+        </div>
+    </div>
+</div>
